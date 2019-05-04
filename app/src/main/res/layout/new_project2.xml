@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <com.example.handasy.view.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textButton"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="اختر موقع الارض"
+        android:textSize="@dimen/Small"
+        android:layout_centerInParent="true"
+        android:textColor="@color/darkYellow"
+        android:background="@drawable/button"/>
+
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <com.example.handasy.view.CustomButton
+        android:id="@+id/maplocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mapView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/button"
+        android:visibility="invisible"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/googlemap"
+        android:paddingLeft="20dp"
+        android:text="موقع المكتب"
+        android:textColor="@color/darkYellow" />
+
+</RelativeLayout>

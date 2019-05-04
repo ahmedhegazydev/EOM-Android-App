@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.ActivityMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight=".1"
+                android:id="@+id/menu"
+                android:src="@drawable/menu"  />
+
+            <com.example.handasy.view.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:id="@+id/title"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Small" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:id="@+id/option"
+                android:layout_weight=".1" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/activity_main_content_fragment3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/bar" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary">
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+
+            />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@id/logo"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Medium"
+            android:text="محمد احمد عبدالله"
+
+            />
+
+        <com.example.handasy.view.CustomTextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/logo"
+            android:gravity="right"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Medium"
+
+            android:text="mooahhmedAbdullah"
+            />
+
+        <!--<com.example.handasy.view.CustomTextView-->
+            <!--android:id="@+id/log"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:drawableRight="@drawable/enter_bitmap"-->
+            <!--android:text="  تسجيل الخروج"-->
+            <!--android:textColor="@color/darkYellow"-->
+            <!--android:textSize="@dimen/Medium" />-->
+
+        <ImageView
+            android:id="@+id/googlePlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/googleplus" />
+
+        <ImageView
+            android:id="@+id/twiter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/facebook" />
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/googlePlus"
+            android:layout_below="@id/logo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@id/facebook"
+           android:onClick="logOut"
+           android:gravity="right|center_vertical"
+           android:id="@+id/ll12"
+           android:layout_marginTop="10dp"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="تسجيل الخروج"
+               android:textStyle="bold"
+               android:textSize="13sp"
+               android:textColor="#d4af36"
+
+               />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/entersign"
+               android:scaleType="centerCrop"
+               android:rotation="180"
+               android:layout_marginRight="17dp"
+               android:layout_marginLeft="30dp"
+               android:id="@+id/ivLogOut"
+
+
+               />
+
+       </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

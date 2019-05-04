@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|   عن المكتب"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+        <com.example.handasy.view.CustomTextView
+            android:id="@+id/customeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/about"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|   خدماتنا"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="الهندسة المعماريه"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/tsmem_m3mary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/tsmem_da5ly"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/tnsek_elmwak3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/tsmem_m3mary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|   الهندسه المدنيه"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/elmbany_el5rsanya"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/elmbany_el7dedya"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/el5dmat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|   الهندسه الكهروميكانيكية"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/hndst_elkhrba"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/el7rek_wlamn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/handst_eltkef"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|    إدارة المشاريع"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/eleshraf_motab3a"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/edart_elmwk3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/elmoshtryat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|    الدراسات وحساب الكميات"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/taklft_mshro3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/hesab_elkemyat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/drast_emkanyt_eltwfer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|    الرفع المساحي"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/elrf3_elmesa7y"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="|    تخطيط الأراضي"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small"
+            android:textStyle="bold" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/t5tet_elarady"
+            android:textColor="@color/white"
+            android:textSize="@dimen/VerySmall" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+
+    <com.example.handasy.view.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:text="@string/sign_up"
+        android:id="@+id/signup"
+        android:onClick="signup"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Medium"/>
+
+    <com.example.handasy.view.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signup"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/login"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/Medium"
+        android:text="تسجيل الدخول"
+        android:textColor="@color/white"
+        android:background="@drawable/button"/>
+
+    <com.example.handasy.view.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkYellow"
+        android:layout_above="@id/login"
+        android:onClick="forget"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/forget"/>
+
+    <CheckBox
+        android:layout_width="30dp"
+        android:layout_above="@id/login"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        style="@style/my_checkbox_style"
+        android:checked="true"
+        android:id="@+id/check"
+        android:visibility="invisible"
+        android:layout_height="30dp" />
+
+
+    <com.example.handasy.view.CustomEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:layout_above="@id/login"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/check"
+        android:layout_marginBottom="10dp"
+        android:text="تذكر كلمة المرور"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/inputData"
+        android:layout_above="@id/check"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+    <com.example.handasy.view.CustomTextView
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="-10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_above="@id/inputData"
+        android:text="إدارة المكاتب \nالهندسية"
+        android:textColor="@color/darkYellow"
+        android:textSize="@dimen/Large"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        android:typeface="serif" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/logoText"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logolaunch" />
+
+
+</RelativeLayout>

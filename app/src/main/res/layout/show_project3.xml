@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/relative"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/logo"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"/>
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:id="@+id/title"
+            android:textSize="14sp"
+            android:layout_below="@id/header"
+            android:textColor="@color/darkYellow"
+            android:layout_height="wrap_content"
+            android:text="رئيس قسم الاستشارات"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/logo"/>
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:id="@+id/name"
+            android:textSize="14sp"
+            android:layout_below="@id/title"
+            android:textColor="@color/darkYellow"
+            android:layout_height="wrap_content"
+            android:text="رئيس قسم الاستشارات"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/logo"/>
+
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/call"
+            android:textSize="14sp"
+            android:textColor="@color/darkYellow"
+            android:layout_below="@id/name"
+            android:layout_height="wrap_content"
+            android:text="01222272346"
+            android:gravity="right"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/call_bitmap"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignEnd="@+id/name" />
+
+
+        <com.example.handasy.view.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button"
+            android:layout_below="@id/name"
+            android:id="@+id/callButton"
+            android:text="اتصال"
+            android:layout_toLeftOf="@id/call"
+            android:layout_marginRight="5dp"
+            />
+
+    </RelativeLayout>
+    <com.example.handasy.view.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/maplocation"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_above="@id/relative"
+        android:text="موقع المكتب"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/googlemap"
+        android:textColor="@color/darkYellow"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

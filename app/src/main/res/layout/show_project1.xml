@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+    <com.example.handasy.view.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Small" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/darkYellow"
+        android:verticalScrollbarPosition="left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!--Left-->
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/project_kind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="5dp"
+                            android:text="نوع المشروع"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/project_kind_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/project_kind"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/mo5tt_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/project_kind_data"
+                            android:layout_margin="10dp"
+                            android:text="رقم المخطط"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/mo5tt_number_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/mo5tt_number"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/var"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/mo5tt_number_data"
+                            android:layout_margin="10dp"
+                            android:text="رقم القطعة"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/kt3a_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/var"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/sk_number_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/kt3a_number"
+                            android:layout_margin="10dp"
+                            android:text="تاريخ الصك"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/sk_number_date_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/sk_number_date"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+
+
+                    </RelativeLayout>
+
+
+                    <!--Right-->
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/branch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="5dp"
+                            android:text="الفرع"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/branch_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/branch"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/sk_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/branch_data"
+                            android:layout_margin="10dp"
+                            android:text="رقم الصك"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/sk_number_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/sk_number"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/space"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/sk_number_data"
+                            android:layout_margin="10dp"
+                            android:text="مساحة الارض"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/space_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/space"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/ro5sa_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/space_data"
+                            android:layout_margin="10dp"
+                            android:text="تاريخ الرخصه"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/ro5sa_date_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/ro5sa_date"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/ro5sa_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/ro5sa_date_data"
+                            android:layout_margin="10dp"
+                            android:text="رقم الرخصه"
+                            android:textColor="@color/darkYellow"
+                            android:textSize="@dimen/Small" />
+
+                        <com.example.handasy.view.CustomTextView
+                            android:id="@+id/ro5sa_number_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/ro5sa_number"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Small" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <com.example.handasy.view.CustomTextView
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="right"
+
+                android:text="ملاحظات"
+                android:textColor="@color/darkYellow"
+                android:textSize="@dimen/Small" />
+
+            <com.example.handasy.view.CustomTextView
+                android:id="@+id/notes_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Small" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.handasy.view.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="right"
+    android:textColor="@color/white"
+    android:textSize="@dimen/VerySmall"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="8dp"
+    android:paddingRight="5dp"
+    android:layout_height="match_parent">
+
+</com.example.handasy.view.CustomTextView>

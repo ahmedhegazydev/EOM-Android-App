@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:src="@drawable/image_mobile" />
+
+    <!--<com.example.handasy.view.CustomEditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:hint="كود التفعيل"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textColorHint="@color/white"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:drawableRight="@drawable/id"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:gravity="right"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_marginRight="40dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:textSize="@dimen/VerySmall"-->
+    <!--android:orientation="vertical"-->
+    <!--android:id="@+id/code"-->
+    <!---->
+    <!--/>-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtInContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/id"
+            android:gravity="right"
+            android:hint=" كود التفعيل"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/VerySmall"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/indicatorsignup2" />
+
+    <com.example.handasy.view.CustomButton
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button"
+        android:text="التحقق من كود التفعيل"
+        android:textSize="@dimen/Small" />
+
+
+    <com.example.handasy.view.CustomTextView
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/send_again"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Small" />
+
+
+</LinearLayout>

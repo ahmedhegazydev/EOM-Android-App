@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <com.example.handasy.view.CustomTextView
+            android:id="@+id/state_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:text="حالة المشروع"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small" />
+
+        <com.example.handasy.view.CustomTextView
+            android:id="@+id/state_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state_text"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Small" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:id="@+id/notes_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state_data"
+            android:layout_margin="10dp"
+            android:text="ملاحظات المهندس"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Small" />
+
+        <com.example.handasy.view.CustomTextView
+            android:id="@+id/notes_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notes_text"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Small" />
+
+    </RelativeLayout>
+</RelativeLayout>

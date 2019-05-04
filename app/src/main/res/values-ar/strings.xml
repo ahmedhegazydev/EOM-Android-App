@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">هندسي</string>
+    <string name="sign_up">
+        <u>عمل حساب جديد</u>
+    </string>
+    <string name="send_again"><u>اعادة ارسال الكود التفعيلي</u></string>
+    <string name="forget">
+        <u>نسيت كلمه المرور</u>
+    </string>
+</resources>

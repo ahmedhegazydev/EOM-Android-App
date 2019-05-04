@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <com.example.handasy.view.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="هل تريد الغاء المشروع؟"
+        android:textSize="@dimen/Large"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/text"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.handasy.view.CustomButton
+            android:layout_width="0dp"
+            android:text="نعم"
+            android:textSize="@dimen/Medium"
+            android:textColor="@color/white"
+            android:layout_marginRight="1dp"
+            android:id="@+id/yes"
+            android:background="@color/darkYellow"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"/>
+
+
+        <com.example.handasy.view.CustomButton
+            android:layout_width="0dp"
+            android:text="لا"
+            android:textSize="@dimen/Medium"
+            android:textColor="@color/white"
+            android:id="@+id/no"
+            android:background="@color/darkYellow"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

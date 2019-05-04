@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.example.handasy.view.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/error"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ivPersonalImage"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUp"
+        android:text="محمد احمد عبدالله"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="31sp"
+        android:layout_toLeftOf="@id/ivPersonalImage"
+        android:layout_marginTop="23dp"
+        android:padding="3dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDown"
+        android:text="mohammedabdulla"
+        android:textColor="@color/darkYellow"
+        android:layout_below="@id/tvUp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@id/ivPersonalImage"
+        android:padding="3dp"
+        />
+    <!--<com.example.handasy.view.RoundedImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/about"-->
+
+        <!--/>-->
+
+
+
+</RelativeLayout>

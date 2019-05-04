@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right|center_vertical"
+
+    >
+
+
+
+
+    <com.example.handasy.view.CustomTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/Small"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/logo"
+        android:layout_margin="15dp"/>
+<View
+    android:layout_width="5dp"
+    android:layout_height="match_parent"
+    android:background="@color/darkYellow"
+    android:id="@+id/yellowWall"
+    android:visibility="gone"
+/>
+
+
+</LinearLayout>

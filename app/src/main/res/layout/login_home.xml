@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logolaunch" />
+
+    <com.example.handasy.view.CustomTextView
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:lineSpacingExtra="-10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="إدارة المكاتب \nالهندسية"
+        android:textColor="@color/darkYellow"
+        android:textSize="@dimen/Large"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_below="@id/logoText"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_below="@id/slider"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custom:selected_color="@color/darkYellow"
+        custom:unselected_color="#ffffff"
+        custom:shape="oval"
+        custom:selected_padding_left="3dp"
+        custom:selected_padding_right="3dp"
+        custom:unselected_padding_left="3dp"
+        custom:unselected_padding_right="3dp"
+        custom:selected_width="8dp"
+        custom:selected_height="8dp"
+        custom:unselected_width="4dp"
+        custom:unselected_height="4dp"
+        />
+
+
+    <com.example.handasy.view.CustomButton
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_below="@id/custom_indicator"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/signup"
+        android:onClick="signup"
+        android:text="تسجيل حساب جديد"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Small"
+        android:textStyle="bold"
+        android:layout_marginRight="60dp"
+        android:layout_height="50dp" />
+
+    <com.example.handasy.view.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لديك حساب بالفعل"
+        android:textSize="@dimen/Small"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:id="@+id/haveAccount"
+        android:layout_below="@id/signup"
+        android:typeface="serif"/>
+
+
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/enterSign"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/signup"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/entersign"/>
+
+    <com.example.handasy.view.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تسجيل دخول"
+        android:textSize="@dimen/Small"
+        android:layout_marginLeft="10dp"
+        android:onClick="login"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/enterSign"
+        android:textColor="@color/darkYellow"
+        android:id="@+id/signin"
+        android:layout_below="@id/signup"
+        android:typeface="serif"/>
+
+
+    <com.example.handasy.view.CustomButton
+        android:id="@+id/skip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkYellow"
+        android:gravity="center"
+        android:onClick="skip"
+        android:text="تخطي التسجيل"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Small"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

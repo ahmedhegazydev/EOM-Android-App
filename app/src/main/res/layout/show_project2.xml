@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+
+    <com.example.handasy.view.CustomButton
+        android:id="@+id/textButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mapView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/googlemap"
+        android:paddingLeft="20dp"
+        android:text="موقع الارض"
+        android:textColor="@color/darkYellow" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/textButton"
+        android:orientation="vertical">
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="| صور  الصك"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Medium"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerSk"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbHorizontal="@color/darkYellow"
+            android:scrollbars="horizontal" />
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="| صور  رخصة البلدية"
+            android:textColor="@color/darkYellow"
+            android:textSize="@dimen/Medium"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerBldya"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbHorizontal="@color/darkYellow"
+            android:scrollbars="horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

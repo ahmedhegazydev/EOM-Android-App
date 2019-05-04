@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="60dp"
+        android:id="@+id/data"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+<com.example.handasy.view.CustomTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:textStyle="bold"
+    android:textSize="@dimen/Large"
+    android:textColor="@color/darkYellow"
+    android:gravity="center"
+    android:id="@+id/title"
+    android:text=" تهانينا ! "/>
+
+
+        <com.example.handasy.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/Medium"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/description"
+            android:text="لقد تم ارسال طلب مشروعكم بنجاح"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/correct" />
+
+    <com.example.handasy.view.CustomButton
+        android:layout_width="match_parent"
+        android:background="@color/darkYellow"
+        android:layout_below="@id/data"
+        android:textSize="@dimen/Medium"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:id="@+id/done"
+        android:text="انهاء"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/closebutton"
+        android:layout_marginTop="80dp"
+        android:id="@+id/close"
+        android:layout_marginRight="30dp"
+        android:layout_height="20dp" />
+</RelativeLayout>
